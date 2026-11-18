@@ -1,0 +1,53 @@
+{
+ "ok": true,
+ "violations": [],
+ "modules": {
+  "XL185": {
+   "ok": true,
+   "violations": [],
+   "controls": 111,
+   "labels": 36,
+   "ids": {
+    "param": 83,
+    "input": 6,
+    "output": 15
+   }
+  },
+  "XL185Mod": {
+   "ok": true,
+   "violations": [],
+   "controls": 52,
+   "labels": 30,
+   "ids": {
+    "param": 47,
+    "input": 2,
+    "output": 3
+   }
+  }
+ },
+ "themes": [],
+ "rules": [
+  "inside panel and area",
+  "no overlap, 1.2 mm clear, 2 mm around jacks (Auto and its interval 0.8)",
+  "clear of the screws",
+  "every control labelled",
+  "every param, input, output of each module exactly once",
+  "text >= 10 px",
+  "text contrast >= 4.5 (dimmed >= 3)",
+  "footer group inside the panel, 1.2 from the screws, 0.8 from the panel bottom and the areas above"
+ ],
+ "footer": {
+  "mark": [
+   77.107,
+   123.75,
+   3.305,
+   3.4
+  ],
+  "text": [
+   82.011,
+   124.401,
+   23.762,
+   2.098
+  ]
+ }
+}

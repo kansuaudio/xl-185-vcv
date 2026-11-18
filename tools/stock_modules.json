@@ -1,0 +1,3480 @@
+{
+ "_about": "Port and param ids, names and ranges of the stock Fundamental and Core modules, read from module instances created inside headless Rack 2.6.6 (Fundamental 2.6.4). hp is the panel width from each panel SVG. Core AudioInterface2 is not created by the probe (it would open an audio device); its ids are the ones used by Rack's own template.vcv.",
+ "Core": {
+  "version": "2.6.6",
+  "not_probed": [
+   "AudioInterface",
+   "AudioInterface16",
+   "MIDIToCVInterface",
+   "MIDICCToCVInterface",
+   "MIDITriggerToCVInterface",
+   "MIDI-Map",
+   "CV-MIDI",
+   "CV-CC",
+   "CV-Gate"
+  ],
+  "models": {
+   "Blank": {
+    "params": [],
+    "inputs": [],
+    "outputs": []
+   },
+   "Notes": {
+    "hp": 16.0,
+    "params": [],
+    "inputs": [],
+    "outputs": []
+   },
+   "AudioInterface2": {
+    "hp": 5.0,
+    "from_template": true,
+    "params": [
+     {
+      "id": 0,
+      "name": "Level",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0,
+      "snap": false,
+      "unit": ""
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Audio 1"
+     },
+     {
+      "id": 1,
+      "name": "Audio 2"
+     }
+    ],
+    "outputs": []
+   }
+  }
+ },
+ "Fundamental": {
+  "version": "2.6.4",
+  "not_probed": [],
+  "models": {
+   "8vert": {
+    "hp": 8.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Row 1 gain",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 1,
+      "name": "Row 2 gain",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 2,
+      "name": "Row 3 gain",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 3,
+      "name": "Row 4 gain",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 4,
+      "name": "Row 5 gain",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 5,
+      "name": "Row 6 gain",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 6,
+      "name": "Row 7 gain",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 7,
+      "name": "Row 8 gain",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Row 1"
+     },
+     {
+      "id": 1,
+      "name": "Row 2"
+     },
+     {
+      "id": 2,
+      "name": "Row 3"
+     },
+     {
+      "id": 3,
+      "name": "Row 4"
+     },
+     {
+      "id": 4,
+      "name": "Row 5"
+     },
+     {
+      "id": 5,
+      "name": "Row 6"
+     },
+     {
+      "id": 6,
+      "name": "Row 7"
+     },
+     {
+      "id": 7,
+      "name": "Row 8"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Row 1"
+     },
+     {
+      "id": 1,
+      "name": "Row 2"
+     },
+     {
+      "id": 2,
+      "name": "Row 3"
+     },
+     {
+      "id": 3,
+      "name": "Row 4"
+     },
+     {
+      "id": 4,
+      "name": "Row 5"
+     },
+     {
+      "id": 5,
+      "name": "Row 6"
+     },
+     {
+      "id": 6,
+      "name": "Row 7"
+     },
+     {
+      "id": 7,
+      "name": "Row 8"
+     }
+    ]
+   },
+   "ADSR": {
+    "hp": 9.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Attack",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.5,
+      "snap": false,
+      "unit": " ms"
+     },
+     {
+      "id": 1,
+      "name": "Decay",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.5,
+      "snap": false,
+      "unit": " ms"
+     },
+     {
+      "id": 2,
+      "name": "Sustain",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.5,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 3,
+      "name": "Release",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.5,
+      "snap": false,
+      "unit": " ms"
+     },
+     {
+      "id": 4,
+      "name": "Attack CV",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 5,
+      "name": "Decay CV",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 6,
+      "name": "Sustain CV",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 7,
+      "name": "Release CV",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 8,
+      "name": "Push",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Attack"
+     },
+     {
+      "id": 1,
+      "name": "Decay"
+     },
+     {
+      "id": 2,
+      "name": "Sustain"
+     },
+     {
+      "id": 3,
+      "name": "Release"
+     },
+     {
+      "id": 4,
+      "name": "Gate"
+     },
+     {
+      "id": 5,
+      "name": "Retrigger"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Envelope"
+     }
+    ]
+   },
+   "CVMix": {
+    "hp": 3.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Level 1",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 1,
+      "name": "Level 2",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 2,
+      "name": "Level 3",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "CV 1"
+     },
+     {
+      "id": 1,
+      "name": "CV 2"
+     },
+     {
+      "id": 2,
+      "name": "CV 3"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Mix"
+     }
+    ]
+   },
+   "Compare": {
+    "hp": 5.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "B offset",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "A"
+     },
+     {
+      "id": 1,
+      "name": "B"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Maximum"
+     },
+     {
+      "id": 1,
+      "name": "Minimum"
+     },
+     {
+      "id": 2,
+      "name": "Clip"
+     },
+     {
+      "id": 3,
+      "name": "Limit"
+     },
+     {
+      "id": 4,
+      "name": "Clip gate"
+     },
+     {
+      "id": 5,
+      "name": "Limit gate"
+     },
+     {
+      "id": 6,
+      "name": "A>B"
+     },
+     {
+      "id": 7,
+      "name": "A<B"
+     }
+    ]
+   },
+   "Delay": {
+    "hp": 9.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Time",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.6747425198554993,
+      "snap": false,
+      "unit": " s"
+     },
+     {
+      "id": 1,
+      "name": "Feedback",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.5,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 2,
+      "name": "Tone",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.5,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 3,
+      "name": "Mix",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.5,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 4,
+      "name": "Time CV",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 5,
+      "name": "Feedback CV",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 6,
+      "name": "Tone CV",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 7,
+      "name": "Mix CV",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Time"
+     },
+     {
+      "id": 1,
+      "name": "Feedback"
+     },
+     {
+      "id": 2,
+      "name": "Tone"
+     },
+     {
+      "id": 3,
+      "name": "Mix"
+     },
+     {
+      "id": 4,
+      "name": "Audio"
+     },
+     {
+      "id": 5,
+      "name": "Clock"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Mix"
+     },
+     {
+      "id": 1,
+      "name": "Wet"
+     }
+    ]
+   },
+   "Fade": {
+    "hp": 3.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Crossfade",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.5,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 1,
+      "name": "Crossfade CV",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Crossfade"
+     },
+     {
+      "id": 1,
+      "name": "Ch 1"
+     },
+     {
+      "id": 2,
+      "name": "Ch 2"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Ch 1"
+     },
+     {
+      "id": 1,
+      "name": "Ch 2"
+     }
+    ]
+   },
+   "Gates": {
+    "hp": 5.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Gate length",
+      "min": -9.965784072875977,
+      "max": 3.321928024291992,
+      "default": -3.321928024291992,
+      "snap": false,
+      "unit": " ms"
+     },
+     {
+      "id": 1,
+      "name": "Reset flip/flop",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Gate length"
+     },
+     {
+      "id": 1,
+      "name": "Gate"
+     },
+     {
+      "id": 2,
+      "name": "Reset flip/flop"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Rising edge trigger"
+     },
+     {
+      "id": 1,
+      "name": "Falling edge trigger"
+     },
+     {
+      "id": 2,
+      "name": "Flip"
+     },
+     {
+      "id": 3,
+      "name": "Flop"
+     },
+     {
+      "id": 4,
+      "name": "Gate"
+     },
+     {
+      "id": 5,
+      "name": "Gate delay"
+     }
+    ]
+   },
+   "LFO": {
+    "hp": 9.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Offset",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0,
+      "snap": true,
+      "unit": "",
+      "labels": [
+       "Bipolar",
+       "Unipolar"
+      ]
+     },
+     {
+      "id": 1,
+      "name": "Invert",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 2,
+      "name": "Frequency",
+      "min": -8.0,
+      "max": 10.0,
+      "default": 1.0,
+      "snap": false,
+      "unit": " Hz"
+     },
+     {
+      "id": 3,
+      "name": "Frequency modulation",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 4,
+      "name": "",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": ""
+     },
+     {
+      "id": 5,
+      "name": "Pulse width",
+      "min": 0.009999999776482582,
+      "max": 0.9900000095367432,
+      "default": 0.5,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 6,
+      "name": "Pulse width modulation",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Frequency modulation"
+     },
+     {
+      "id": 1,
+      "name": ""
+     },
+     {
+      "id": 2,
+      "name": "Reset"
+     },
+     {
+      "id": 3,
+      "name": "Pulse width modulation"
+     },
+     {
+      "id": 4,
+      "name": "Clock"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Sine"
+     },
+     {
+      "id": 1,
+      "name": "Triangle"
+     },
+     {
+      "id": 2,
+      "name": "Sawtooth"
+     },
+     {
+      "id": 3,
+      "name": "Square"
+     }
+    ]
+   },
+   "LFO2": {
+    "hp": 7.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Offset",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0,
+      "snap": true,
+      "unit": "",
+      "labels": [
+       "Bipolar",
+       "Unipolar"
+      ]
+     },
+     {
+      "id": 1,
+      "name": "Invert",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 2,
+      "name": "Frequency",
+      "min": -8.0,
+      "max": 10.0,
+      "default": 1.0,
+      "snap": false,
+      "unit": " Hz"
+     },
+     {
+      "id": 3,
+      "name": "Wavetable position",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 4,
+      "name": "Frequency modulation",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 5,
+      "name": "Wavetable position CV",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Frequency modulation"
+     },
+     {
+      "id": 1,
+      "name": "Reset"
+     },
+     {
+      "id": 2,
+      "name": "Wavetable position"
+     },
+     {
+      "id": 3,
+      "name": "Clock"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Wavetable"
+     }
+    ]
+   },
+   "Logic": {
+    "hp": 5.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "B",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "A"
+     },
+     {
+      "id": 1,
+      "name": "B"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "NOT A"
+     },
+     {
+      "id": 1,
+      "name": "NOT B"
+     },
+     {
+      "id": 2,
+      "name": "OR"
+     },
+     {
+      "id": 3,
+      "name": "NOR"
+     },
+     {
+      "id": 4,
+      "name": "AND"
+     },
+     {
+      "id": 5,
+      "name": "NAND"
+     },
+     {
+      "id": 6,
+      "name": "XOR"
+     },
+     {
+      "id": 7,
+      "name": "XNOR"
+     }
+    ]
+   },
+   "Merge": {
+    "hp": 5.0,
+    "params": [],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Channel 1"
+     },
+     {
+      "id": 1,
+      "name": "Channel 2"
+     },
+     {
+      "id": 2,
+      "name": "Channel 3"
+     },
+     {
+      "id": 3,
+      "name": "Channel 4"
+     },
+     {
+      "id": 4,
+      "name": "Channel 5"
+     },
+     {
+      "id": 5,
+      "name": "Channel 6"
+     },
+     {
+      "id": 6,
+      "name": "Channel 7"
+     },
+     {
+      "id": 7,
+      "name": "Channel 8"
+     },
+     {
+      "id": 8,
+      "name": "Channel 9"
+     },
+     {
+      "id": 9,
+      "name": "Channel 10"
+     },
+     {
+      "id": 10,
+      "name": "Channel 11"
+     },
+     {
+      "id": 11,
+      "name": "Channel 12"
+     },
+     {
+      "id": 12,
+      "name": "Channel 13"
+     },
+     {
+      "id": 13,
+      "name": "Channel 14"
+     },
+     {
+      "id": 14,
+      "name": "Channel 15"
+     },
+     {
+      "id": 15,
+      "name": "Channel 16"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Polyphonic"
+     }
+    ]
+   },
+   "MidSide": {
+    "hp": 5.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Encoder width",
+      "min": 0.0,
+      "max": 2.0,
+      "default": 1.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 1,
+      "name": "Decoder width",
+      "min": 0.0,
+      "max": 2.0,
+      "default": 1.0,
+      "snap": false,
+      "unit": "%"
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Encoder width"
+     },
+     {
+      "id": 1,
+      "name": "Encoder left"
+     },
+     {
+      "id": 2,
+      "name": "Encoder right"
+     },
+     {
+      "id": 3,
+      "name": "Decoder width"
+     },
+     {
+      "id": 4,
+      "name": "Decoder mid"
+     },
+     {
+      "id": 5,
+      "name": "Decoder side"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Encoder mid"
+     },
+     {
+      "id": 1,
+      "name": "Encoder side"
+     },
+     {
+      "id": 2,
+      "name": "Decoder left"
+     },
+     {
+      "id": 3,
+      "name": "Decoder right"
+     }
+    ]
+   },
+   "Mixer": {
+    "hp": 3.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Level",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0,
+      "snap": false,
+      "unit": "%"
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Channel 1"
+     },
+     {
+      "id": 1,
+      "name": "Channel 2"
+     },
+     {
+      "id": 2,
+      "name": "Channel 3"
+     },
+     {
+      "id": 3,
+      "name": "Channel 4"
+     },
+     {
+      "id": 4,
+      "name": "Channel 5"
+     },
+     {
+      "id": 5,
+      "name": "Channel 6"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Mix"
+     }
+    ]
+   },
+   "Mult": {
+    "hp": 3.0,
+    "params": [],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Mult"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Mult 1"
+     },
+     {
+      "id": 1,
+      "name": "Mult 2"
+     },
+     {
+      "id": 2,
+      "name": "Mult 3"
+     },
+     {
+      "id": 3,
+      "name": "Mult 4"
+     },
+     {
+      "id": 4,
+      "name": "Mult 5"
+     },
+     {
+      "id": 5,
+      "name": "Mult 6"
+     },
+     {
+      "id": 6,
+      "name": "Mult 7"
+     },
+     {
+      "id": 7,
+      "name": "Mult 8"
+     }
+    ]
+   },
+   "Mutes": {
+    "hp": 8.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Row 1 mute",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 1,
+      "name": "Row 2 mute",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 2,
+      "name": "Row 3 mute",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 3,
+      "name": "Row 4 mute",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 4,
+      "name": "Row 5 mute",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 5,
+      "name": "Row 6 mute",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 6,
+      "name": "Row 7 mute",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 7,
+      "name": "Row 8 mute",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 8,
+      "name": "Row 9 mute",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 9,
+      "name": "Row 10 mute",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Row 1"
+     },
+     {
+      "id": 1,
+      "name": "Row 2"
+     },
+     {
+      "id": 2,
+      "name": "Row 3"
+     },
+     {
+      "id": 3,
+      "name": "Row 4"
+     },
+     {
+      "id": 4,
+      "name": "Row 5"
+     },
+     {
+      "id": 5,
+      "name": "Row 6"
+     },
+     {
+      "id": 6,
+      "name": "Row 7"
+     },
+     {
+      "id": 7,
+      "name": "Row 8"
+     },
+     {
+      "id": 8,
+      "name": "Row 9"
+     },
+     {
+      "id": 9,
+      "name": "Row 10"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Row 1"
+     },
+     {
+      "id": 1,
+      "name": "Row 2"
+     },
+     {
+      "id": 2,
+      "name": "Row 3"
+     },
+     {
+      "id": 3,
+      "name": "Row 4"
+     },
+     {
+      "id": 4,
+      "name": "Row 5"
+     },
+     {
+      "id": 5,
+      "name": "Row 6"
+     },
+     {
+      "id": 6,
+      "name": "Row 7"
+     },
+     {
+      "id": 7,
+      "name": "Row 8"
+     },
+     {
+      "id": 8,
+      "name": "Row 9"
+     },
+     {
+      "id": 9,
+      "name": "Row 10"
+     }
+    ]
+   },
+   "Noise": {
+    "hp": 3.0,
+    "params": [],
+    "inputs": [],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "White noise"
+     },
+     {
+      "id": 1,
+      "name": "Pink noise"
+     },
+     {
+      "id": 2,
+      "name": "Red noise"
+     },
+     {
+      "id": 3,
+      "name": "Violet noise"
+     },
+     {
+      "id": 4,
+      "name": "Blue noise"
+     },
+     {
+      "id": 5,
+      "name": "Gray noise"
+     },
+     {
+      "id": 6,
+      "name": "Black noise"
+     }
+    ]
+   },
+   "Octave": {
+    "hp": 3.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Shift",
+      "min": -4.0,
+      "max": 4.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": " oct"
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "1V/octave pitch"
+     },
+     {
+      "id": 1,
+      "name": "Octave shift CV"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Pitch"
+     }
+    ]
+   },
+   "Process": {
+    "hp": 5.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Slew",
+      "min": -9.965784072875977,
+      "max": 3.321928024291992,
+      "default": -9.965784072875977,
+      "snap": false,
+      "unit": " ms/V"
+     },
+     {
+      "id": 1,
+      "name": "Gate",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Slew"
+     },
+     {
+      "id": 1,
+      "name": "Voltage"
+     },
+     {
+      "id": 2,
+      "name": "Gate"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Sample & hold"
+     },
+     {
+      "id": 1,
+      "name": "Sample & hold 2"
+     },
+     {
+      "id": 2,
+      "name": "Track & hold"
+     },
+     {
+      "id": 3,
+      "name": "Hold & track"
+     },
+     {
+      "id": 4,
+      "name": "Slew"
+     },
+     {
+      "id": 5,
+      "name": "Glide"
+     }
+    ]
+   },
+   "Pulses": {
+    "hp": 8.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Row 1 push",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 1,
+      "name": "Row 2 push",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 2,
+      "name": "Row 3 push",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 3,
+      "name": "Row 4 push",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 4,
+      "name": "Row 5 push",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 5,
+      "name": "Row 6 push",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 6,
+      "name": "Row 7 push",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 7,
+      "name": "Row 8 push",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 8,
+      "name": "Row 9 push",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 9,
+      "name": "Row 10 push",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     }
+    ],
+    "inputs": [],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Row 1 trigger"
+     },
+     {
+      "id": 1,
+      "name": "Row 2 trigger"
+     },
+     {
+      "id": 2,
+      "name": "Row 3 trigger"
+     },
+     {
+      "id": 3,
+      "name": "Row 4 trigger"
+     },
+     {
+      "id": 4,
+      "name": "Row 5 trigger"
+     },
+     {
+      "id": 5,
+      "name": "Row 6 trigger"
+     },
+     {
+      "id": 6,
+      "name": "Row 7 trigger"
+     },
+     {
+      "id": 7,
+      "name": "Row 8 trigger"
+     },
+     {
+      "id": 8,
+      "name": "Row 9 trigger"
+     },
+     {
+      "id": 9,
+      "name": "Row 10 trigger"
+     },
+     {
+      "id": 10,
+      "name": "Row 1 gate"
+     },
+     {
+      "id": 11,
+      "name": "Row 2 gate"
+     },
+     {
+      "id": 12,
+      "name": "Row 3 gate"
+     },
+     {
+      "id": 13,
+      "name": "Row 4 gate"
+     },
+     {
+      "id": 14,
+      "name": "Row 5 gate"
+     },
+     {
+      "id": 15,
+      "name": "Row 6 gate"
+     },
+     {
+      "id": 16,
+      "name": "Row 7 gate"
+     },
+     {
+      "id": 17,
+      "name": "Row 8 gate"
+     },
+     {
+      "id": 18,
+      "name": "Row 9 gate"
+     },
+     {
+      "id": 19,
+      "name": "Row 10 gate"
+     }
+    ]
+   },
+   "Push": {
+    "hp": 3.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Push",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 1,
+      "name": "Hold",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Hold"
+     },
+     {
+      "id": 1,
+      "name": "Push"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Trigger"
+     },
+     {
+      "id": 1,
+      "name": "Gate"
+     }
+    ]
+   },
+   "Quantizer": {
+    "hp": 3.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Pre-offset",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " semitones"
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "1V/octave pitch"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Pitch"
+     }
+    ]
+   },
+   "Random": {
+    "hp": 9.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Internal trigger rate",
+      "min": -8.965784072875977,
+      "max": 10.965784072875977,
+      "default": 1.0,
+      "snap": false,
+      "unit": " Hz"
+     },
+     {
+      "id": 1,
+      "name": "Shape",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 2,
+      "name": "Offset",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": "",
+      "labels": [
+       "Bipolar",
+       "Unipolar"
+      ]
+     },
+     {
+      "id": 3,
+      "name": "",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": ""
+     },
+     {
+      "id": 4,
+      "name": "Trigger probability",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 5,
+      "name": "Random spread",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 6,
+      "name": "Internal trigger rate CV",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 7,
+      "name": "Shape CV",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 8,
+      "name": "Trigger probability CV",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 9,
+      "name": "Random spread CV",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Internal trigger rate"
+     },
+     {
+      "id": 1,
+      "name": "Shape"
+     },
+     {
+      "id": 2,
+      "name": "Trigger"
+     },
+     {
+      "id": 3,
+      "name": "External"
+     },
+     {
+      "id": 4,
+      "name": "Trigger probability"
+     },
+     {
+      "id": 5,
+      "name": "Random spread"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Stepped"
+     },
+     {
+      "id": 1,
+      "name": "Linear"
+     },
+     {
+      "id": 2,
+      "name": "Smooth"
+     },
+     {
+      "id": 3,
+      "name": "Exponential"
+     },
+     {
+      "id": 4,
+      "name": "Trigger"
+     }
+    ]
+   },
+   "RandomValues": {
+    "hp": 3.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Push",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Trigger"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Random 1"
+     },
+     {
+      "id": 1,
+      "name": "Random 2"
+     },
+     {
+      "id": 2,
+      "name": "Random 3"
+     },
+     {
+      "id": 3,
+      "name": "Random 4"
+     },
+     {
+      "id": 4,
+      "name": "Random 5"
+     },
+     {
+      "id": 5,
+      "name": "Random 6"
+     },
+     {
+      "id": 6,
+      "name": "Random 7"
+     }
+    ]
+   },
+   "Rescale": {
+    "hp": 3.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Gain",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 1,
+      "name": "Offset",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 2,
+      "name": "Maximum",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 10.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 3,
+      "name": "Minimum",
+      "min": -10.0,
+      "max": 10.0,
+      "default": -10.0,
+      "snap": false,
+      "unit": " V"
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Signal"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Signal"
+     }
+    ]
+   },
+   "SEQ3": {
+    "hp": 22.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Tempo",
+      "min": -2.0,
+      "max": 4.0,
+      "default": 1.0,
+      "snap": false,
+      "unit": " bpm"
+     },
+     {
+      "id": 1,
+      "name": "Run",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 2,
+      "name": "Reset",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 3,
+      "name": "Steps",
+      "min": 1.0,
+      "max": 8.0,
+      "default": 8.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 4,
+      "name": "CV 1 step 1",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 5,
+      "name": "CV 1 step 2",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 6,
+      "name": "CV 1 step 3",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 7,
+      "name": "CV 1 step 4",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 8,
+      "name": "CV 1 step 5",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 9,
+      "name": "CV 1 step 6",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 10,
+      "name": "CV 1 step 7",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 11,
+      "name": "CV 1 step 8",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 12,
+      "name": "CV 2 step 1",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 13,
+      "name": "CV 2 step 2",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 14,
+      "name": "CV 2 step 3",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 15,
+      "name": "CV 2 step 4",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 16,
+      "name": "CV 2 step 5",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 17,
+      "name": "CV 2 step 6",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 18,
+      "name": "CV 2 step 7",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 19,
+      "name": "CV 2 step 8",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 20,
+      "name": "CV 3 step 1",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 21,
+      "name": "CV 3 step 2",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 22,
+      "name": "CV 3 step 3",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 23,
+      "name": "CV 3 step 4",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 24,
+      "name": "CV 3 step 5",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 25,
+      "name": "CV 3 step 6",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 26,
+      "name": "CV 3 step 7",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 27,
+      "name": "CV 3 step 8",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 28,
+      "name": "Step 1 trigger",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 29,
+      "name": "Step 2 trigger",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 30,
+      "name": "Step 3 trigger",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 31,
+      "name": "Step 4 trigger",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 32,
+      "name": "Step 5 trigger",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 33,
+      "name": "Step 6 trigger",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 34,
+      "name": "Step 7 trigger",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 35,
+      "name": "Step 8 trigger",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 36,
+      "name": "Tempo CV",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 37,
+      "name": "Steps CV",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 38,
+      "name": "Clock",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Tempo"
+     },
+     {
+      "id": 1,
+      "name": "Clock"
+     },
+     {
+      "id": 2,
+      "name": "Reset"
+     },
+     {
+      "id": 3,
+      "name": "Steps"
+     },
+     {
+      "id": 4,
+      "name": "Run"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Trigger"
+     },
+     {
+      "id": 1,
+      "name": "CV 1"
+     },
+     {
+      "id": 2,
+      "name": "CV 2"
+     },
+     {
+      "id": 3,
+      "name": "CV 3"
+     },
+     {
+      "id": 4,
+      "name": "Step 1"
+     },
+     {
+      "id": 5,
+      "name": "Step 2"
+     },
+     {
+      "id": 6,
+      "name": "Step 3"
+     },
+     {
+      "id": 7,
+      "name": "Step 4"
+     },
+     {
+      "id": 8,
+      "name": "Step 5"
+     },
+     {
+      "id": 9,
+      "name": "Step 6"
+     },
+     {
+      "id": 10,
+      "name": "Step 7"
+     },
+     {
+      "id": 11,
+      "name": "Step 8"
+     },
+     {
+      "id": 12,
+      "name": "Steps"
+     },
+     {
+      "id": 13,
+      "name": "Clock"
+     },
+     {
+      "id": 14,
+      "name": "Run"
+     },
+     {
+      "id": 15,
+      "name": "Reset"
+     }
+    ]
+   },
+   "SHASR": {
+    "hp": 7.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Randomize",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 1,
+      "name": "Push",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     },
+     {
+      "id": 2,
+      "name": "Clear",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": ""
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Sample 1"
+     },
+     {
+      "id": 1,
+      "name": "Sample 2"
+     },
+     {
+      "id": 2,
+      "name": "Sample 3"
+     },
+     {
+      "id": 3,
+      "name": "Sample 4"
+     },
+     {
+      "id": 4,
+      "name": "Sample 5"
+     },
+     {
+      "id": 5,
+      "name": "Sample 6"
+     },
+     {
+      "id": 6,
+      "name": "Sample 7"
+     },
+     {
+      "id": 7,
+      "name": "Sample 8"
+     },
+     {
+      "id": 8,
+      "name": "Trigger 1"
+     },
+     {
+      "id": 9,
+      "name": "Trigger 2"
+     },
+     {
+      "id": 10,
+      "name": "Trigger 3"
+     },
+     {
+      "id": 11,
+      "name": "Trigger 4"
+     },
+     {
+      "id": 12,
+      "name": "Trigger 5"
+     },
+     {
+      "id": 13,
+      "name": "Trigger 6"
+     },
+     {
+      "id": 14,
+      "name": "Trigger 7"
+     },
+     {
+      "id": 15,
+      "name": "Trigger 8"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Sample 1"
+     },
+     {
+      "id": 1,
+      "name": "Sample 2"
+     },
+     {
+      "id": 2,
+      "name": "Sample 3"
+     },
+     {
+      "id": 3,
+      "name": "Sample 4"
+     },
+     {
+      "id": 4,
+      "name": "Sample 5"
+     },
+     {
+      "id": 5,
+      "name": "Sample 6"
+     },
+     {
+      "id": 6,
+      "name": "Sample 7"
+     },
+     {
+      "id": 7,
+      "name": "Sample 8"
+     }
+    ]
+   },
+   "Scope": {
+    "hp": 13.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Gain 1",
+      "min": 0.0,
+      "max": 8.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": " V/screen"
+     },
+     {
+      "id": 1,
+      "name": "Offset 1",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 2,
+      "name": "Gain 2",
+      "min": 0.0,
+      "max": 8.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": " V/screen"
+     },
+     {
+      "id": 3,
+      "name": "Offset 2",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 4,
+      "name": "Time",
+      "min": -5.643856048583984,
+      "max": 7.643856048583984,
+      "default": 1.0,
+      "snap": false,
+      "unit": " ms/screen"
+     },
+     {
+      "id": 5,
+      "name": "Scope mode",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": "",
+      "labels": [
+       "1 & 2",
+       "1 x 2"
+      ]
+     },
+     {
+      "id": 6,
+      "name": "Trigger threshold",
+      "min": -10.0,
+      "max": 10.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " V"
+     },
+     {
+      "id": 7,
+      "name": "Trigger",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0,
+      "snap": true,
+      "unit": "",
+      "labels": [
+       "Enabled",
+       "Disabled"
+      ]
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Ch 1"
+     },
+     {
+      "id": 1,
+      "name": "Ch 2"
+     },
+     {
+      "id": 2,
+      "name": "External trigger"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Ch 1"
+     },
+     {
+      "id": 1,
+      "name": "Ch 2"
+     }
+    ]
+   },
+   "SequentialSwitch1": {
+    "hp": 3.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Steps",
+      "min": 0.0,
+      "max": 2.0,
+      "default": 2.0,
+      "snap": true,
+      "unit": "",
+      "labels": [
+       "2",
+       "3",
+       "4"
+      ]
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Clock"
+     },
+     {
+      "id": 1,
+      "name": "Reset"
+     },
+     {
+      "id": 2,
+      "name": "Main"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Channel 1"
+     },
+     {
+      "id": 1,
+      "name": "Channel 2"
+     },
+     {
+      "id": 2,
+      "name": "Channel 3"
+     },
+     {
+      "id": 3,
+      "name": "Channel 4"
+     }
+    ]
+   },
+   "SequentialSwitch2": {
+    "hp": 3.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Steps",
+      "min": 0.0,
+      "max": 2.0,
+      "default": 2.0,
+      "snap": true,
+      "unit": "",
+      "labels": [
+       "2",
+       "3",
+       "4"
+      ]
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Clock"
+     },
+     {
+      "id": 1,
+      "name": "Reset"
+     },
+     {
+      "id": 2,
+      "name": "Channel 1"
+     },
+     {
+      "id": 3,
+      "name": "Channel 2"
+     },
+     {
+      "id": 4,
+      "name": "Channel 3"
+     },
+     {
+      "id": 5,
+      "name": "Channel 4"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Main"
+     }
+    ]
+   },
+   "Split": {
+    "hp": 5.0,
+    "params": [],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Polyphonic"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Channel 1"
+     },
+     {
+      "id": 1,
+      "name": "Channel 2"
+     },
+     {
+      "id": 2,
+      "name": "Channel 3"
+     },
+     {
+      "id": 3,
+      "name": "Channel 4"
+     },
+     {
+      "id": 4,
+      "name": "Channel 5"
+     },
+     {
+      "id": 5,
+      "name": "Channel 6"
+     },
+     {
+      "id": 6,
+      "name": "Channel 7"
+     },
+     {
+      "id": 7,
+      "name": "Channel 8"
+     },
+     {
+      "id": 8,
+      "name": "Channel 9"
+     },
+     {
+      "id": 9,
+      "name": "Channel 10"
+     },
+     {
+      "id": 10,
+      "name": "Channel 11"
+     },
+     {
+      "id": 11,
+      "name": "Channel 12"
+     },
+     {
+      "id": 12,
+      "name": "Channel 13"
+     },
+     {
+      "id": 13,
+      "name": "Channel 14"
+     },
+     {
+      "id": 14,
+      "name": "Channel 15"
+     },
+     {
+      "id": 15,
+      "name": "Channel 16"
+     }
+    ]
+   },
+   "Sum": {
+    "hp": 3.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Level",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0,
+      "snap": false,
+      "unit": "%"
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Polyphonic"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Monophonic"
+     }
+    ]
+   },
+   "Unity": {
+    "hp": 6.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Channel 1 mode",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": "",
+      "labels": [
+       "Sum",
+       "Average"
+      ]
+     },
+     {
+      "id": 1,
+      "name": "Channel 2 mode",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": "",
+      "labels": [
+       "Sum",
+       "Average"
+      ]
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Channel 1 #1"
+     },
+     {
+      "id": 1,
+      "name": "Channel 1 #2"
+     },
+     {
+      "id": 2,
+      "name": "Channel 1 #3"
+     },
+     {
+      "id": 3,
+      "name": "Channel 1 #4"
+     },
+     {
+      "id": 4,
+      "name": "Channel 1 #5"
+     },
+     {
+      "id": 5,
+      "name": "Channel 1 #6"
+     },
+     {
+      "id": 6,
+      "name": "Channel 2 #1"
+     },
+     {
+      "id": 7,
+      "name": "Channel 2 #2"
+     },
+     {
+      "id": 8,
+      "name": "Channel 2 #3"
+     },
+     {
+      "id": 9,
+      "name": "Channel 2 #4"
+     },
+     {
+      "id": 10,
+      "name": "Channel 2 #5"
+     },
+     {
+      "id": 11,
+      "name": "Channel 2 #6"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Channel 1 mix"
+     },
+     {
+      "id": 1,
+      "name": "Channel 1 inverse mix"
+     },
+     {
+      "id": 2,
+      "name": "Channel 2 mix"
+     },
+     {
+      "id": 3,
+      "name": "Channel 2 inverse mix"
+     }
+    ]
+   },
+   "VCA": {
+    "hp": 5.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Channel 1 level",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 1,
+      "name": "Channel 2 level",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0,
+      "snap": false,
+      "unit": "%"
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Channel 1 exponential CV"
+     },
+     {
+      "id": 1,
+      "name": "Channel 1 linear CV"
+     },
+     {
+      "id": 2,
+      "name": "Channel 1"
+     },
+     {
+      "id": 3,
+      "name": "Channel 2 exponential CV"
+     },
+     {
+      "id": 4,
+      "name": "Channel 2 linear CV"
+     },
+     {
+      "id": 5,
+      "name": "Channel 2"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Channel 1"
+     },
+     {
+      "id": 1,
+      "name": "Channel 2"
+     }
+    ]
+   },
+   "VCA-1": {
+    "hp": 3.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Level",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 1,
+      "name": "Response mode",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0,
+      "snap": true,
+      "unit": "",
+      "labels": [
+       "Exponential",
+       "Linear"
+      ]
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "CV"
+     },
+     {
+      "id": 1,
+      "name": "Channel"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Channel"
+     }
+    ]
+   },
+   "VCF": {
+    "hp": 7.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Cutoff frequency",
+      "min": 0.006557554006576538,
+      "max": 0.9934424161911011,
+      "default": 0.5,
+      "snap": false,
+      "unit": " Hz"
+     },
+     {
+      "id": 1,
+      "name": "",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": ""
+     },
+     {
+      "id": 2,
+      "name": "Resonance",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 3,
+      "name": "Cutoff frequency CV",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 4,
+      "name": "Drive",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 5,
+      "name": "Resonance CV",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 6,
+      "name": "Drive CV",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Frequency"
+     },
+     {
+      "id": 1,
+      "name": "Resonance"
+     },
+     {
+      "id": 2,
+      "name": "Drive"
+     },
+     {
+      "id": 3,
+      "name": "Audio"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Lowpass filter"
+     },
+     {
+      "id": 1,
+      "name": "Highpass filter"
+     }
+    ]
+   },
+   "VCMixer": {
+    "hp": 9.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "Mix level",
+      "min": 0.0,
+      "max": 2.0,
+      "default": 1.0,
+      "snap": false,
+      "unit": " dB"
+     },
+     {
+      "id": 1,
+      "name": "Channel 1 level",
+      "min": 0.0,
+      "max": 1.4142135381698608,
+      "default": 1.0,
+      "snap": false,
+      "unit": " dB"
+     },
+     {
+      "id": 2,
+      "name": "Channel 2 level",
+      "min": 0.0,
+      "max": 1.4142135381698608,
+      "default": 1.0,
+      "snap": false,
+      "unit": " dB"
+     },
+     {
+      "id": 3,
+      "name": "Channel 3 level",
+      "min": 0.0,
+      "max": 1.4142135381698608,
+      "default": 1.0,
+      "snap": false,
+      "unit": " dB"
+     },
+     {
+      "id": 4,
+      "name": "Channel 4 level",
+      "min": 0.0,
+      "max": 1.4142135381698608,
+      "default": 1.0,
+      "snap": false,
+      "unit": " dB"
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Mix CV"
+     },
+     {
+      "id": 1,
+      "name": "Channel 1"
+     },
+     {
+      "id": 2,
+      "name": "Channel 2"
+     },
+     {
+      "id": 3,
+      "name": "Channel 3"
+     },
+     {
+      "id": 4,
+      "name": "Channel 4"
+     },
+     {
+      "id": 5,
+      "name": "Channel 1 CV"
+     },
+     {
+      "id": 6,
+      "name": "Channel 2 CV"
+     },
+     {
+      "id": 7,
+      "name": "Channel 3 CV"
+     },
+     {
+      "id": 8,
+      "name": "Channel 4 CV"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Mix"
+     },
+     {
+      "id": 1,
+      "name": "Channel 1"
+     },
+     {
+      "id": 2,
+      "name": "Channel 2"
+     },
+     {
+      "id": 3,
+      "name": "Channel 3"
+     },
+     {
+      "id": 4,
+      "name": "Channel 4"
+     }
+    ]
+   },
+   "VCO": {
+    "hp": 9.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": ""
+     },
+     {
+      "id": 1,
+      "name": "Sync mode",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 1.0,
+      "snap": true,
+      "unit": "",
+      "labels": [
+       "Soft",
+       "Hard"
+      ]
+     },
+     {
+      "id": 2,
+      "name": "Frequency",
+      "min": -54.0,
+      "max": 54.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " Hz"
+     },
+     {
+      "id": 3,
+      "name": "",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": ""
+     },
+     {
+      "id": 4,
+      "name": "Frequency modulation",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 5,
+      "name": "Pulse width",
+      "min": 0.009999999776482582,
+      "max": 0.9900000095367432,
+      "default": 0.5,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 6,
+      "name": "Pulse width modulation",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 7,
+      "name": "FM mode",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": "",
+      "labels": [
+       "1V/octave",
+       "Linear"
+      ]
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "1V/octave pitch"
+     },
+     {
+      "id": 1,
+      "name": "Frequency modulation"
+     },
+     {
+      "id": 2,
+      "name": "Sync"
+     },
+     {
+      "id": 3,
+      "name": "Pulse width modulation"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Sine"
+     },
+     {
+      "id": 1,
+      "name": "Triangle"
+     },
+     {
+      "id": 2,
+      "name": "Sawtooth"
+     },
+     {
+      "id": 3,
+      "name": "Square"
+     }
+    ]
+   },
+   "VCO2": {
+    "hp": 7.0,
+    "params": [
+     {
+      "id": 0,
+      "name": "",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": ""
+     },
+     {
+      "id": 1,
+      "name": "Sync",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": "",
+      "labels": [
+       "Hard",
+       "Soft"
+      ]
+     },
+     {
+      "id": 2,
+      "name": "Frequency",
+      "min": -75.0,
+      "max": 75.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": " Hz"
+     },
+     {
+      "id": 3,
+      "name": "Wavetable position",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 4,
+      "name": "Frequency modulation",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 5,
+      "name": "Wavetable position CV",
+      "min": -1.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": false,
+      "unit": "%"
+     },
+     {
+      "id": 6,
+      "name": "FM mode",
+      "min": 0.0,
+      "max": 1.0,
+      "default": 0.0,
+      "snap": true,
+      "unit": "",
+      "labels": [
+       "1V/octave",
+       "Through-zero linear"
+      ]
+     }
+    ],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Frequency modulation"
+     },
+     {
+      "id": 1,
+      "name": "Sync"
+     },
+     {
+      "id": 2,
+      "name": "Wavetable position"
+     },
+     {
+      "id": 3,
+      "name": "1V/octave pitch"
+     }
+    ],
+    "outputs": [
+     {
+      "id": 0,
+      "name": "Wavetable"
+     }
+    ]
+   },
+   "Viz": {
+    "hp": 3.0,
+    "params": [],
+    "inputs": [
+     {
+      "id": 0,
+      "name": "Polyphonic"
+     }
+    ],
+    "outputs": []
+   }
+  }
+ }
+}
