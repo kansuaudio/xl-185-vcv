@@ -177,7 +177,7 @@ sequencer's columns.
 |-----|---|---------|------|
 | Title row | 0.9..5.3 | lane title ("LANE A") at the left; die 5.4 x 4.4 at x 39.6, shift left and right 6.4 x 4.4 at x 47.4 and 55.0 | area title, momentary buttons with glyphs |
 | Values | 6.5..19.6 | eight values 0..100 %, one bar 4.0 x 13.1 per stage | vertical bars as on the sequencer; the playing stage's track is drawn in the mid tone; bars beyond the sequencer's Length are dimmed |
-| Range row | 20.8..25.4 | "min" + screen 8.0 at x 11.5, "max" + screen 8.0 at x 29.1, "smooth" + screen 10.0 at x 51.4 | number screens, drag (full range over 200 px); values without units, the tooltip has them |
+| Range row | 20.8..25.4 | "min" + screen 9.4 at x 11.5, "max" + screen 9.4 at x 29.4, "smooth" + screen 9.4 at x 52.0; Min and Max run -100..100, so the screens fit "-100" | number screens, drag (full range over 200 px); values without units, the tooltip has them |
 
 Bars are 13.1 tall instead of about 15: the 27 mm lane holds the title row, the bars and the range
 row with 1.2 clear between them.

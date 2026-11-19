@@ -24,16 +24,16 @@ static const lay::Label LABELS[] = {
 	{"7", 50.844f, 10.550f, 11.000f, lay::FONT_LABEL, 0, lay::TONE_TEXT, 0.000f},
 	{"8", 57.881f, 10.550f, 11.000f, lay::FONT_LABEL, 0, lay::TONE_TEXT, 0.000f},
 	{"min", 5.100f, 36.100f, 11.000f, lay::FONT_LABEL, -1, lay::TONE_TEXT, 0.000f},
-	{"max", 22.052f, 36.100f, 11.000f, lay::FONT_LABEL, -1, lay::TONE_TEXT, 0.000f},
-	{"smooth", 39.652f, 36.100f, 11.000f, lay::FONT_LABEL, -1, lay::TONE_TEXT, 0.000f},
+	{"max", 22.352f, 36.100f, 11.000f, lay::FONT_LABEL, -1, lay::TONE_TEXT, 0.000f},
+	{"smooth", 40.252f, 36.100f, 11.000f, lay::FONT_LABEL, -1, lay::TONE_TEXT, 0.000f},
 	{"a", 71.640f, 19.500f, 11.000f, lay::FONT_LABEL, 0, lay::TONE_TEXT_DARK, 0.000f},
 	{"min", 5.100f, 65.100f, 11.000f, lay::FONT_LABEL, -1, lay::TONE_TEXT, 0.000f},
-	{"max", 22.052f, 65.100f, 11.000f, lay::FONT_LABEL, -1, lay::TONE_TEXT, 0.000f},
-	{"smooth", 39.652f, 65.100f, 11.000f, lay::FONT_LABEL, -1, lay::TONE_TEXT, 0.000f},
+	{"max", 22.352f, 65.100f, 11.000f, lay::FONT_LABEL, -1, lay::TONE_TEXT, 0.000f},
+	{"smooth", 40.252f, 65.100f, 11.000f, lay::FONT_LABEL, -1, lay::TONE_TEXT, 0.000f},
 	{"b", 71.640f, 48.500f, 11.000f, lay::FONT_LABEL, 0, lay::TONE_TEXT_DARK, 0.000f},
 	{"min", 5.100f, 94.100f, 11.000f, lay::FONT_LABEL, -1, lay::TONE_TEXT, 0.000f},
-	{"max", 22.052f, 94.100f, 11.000f, lay::FONT_LABEL, -1, lay::TONE_TEXT, 0.000f},
-	{"smooth", 39.652f, 94.100f, 11.000f, lay::FONT_LABEL, -1, lay::TONE_TEXT, 0.000f},
+	{"max", 22.352f, 94.100f, 11.000f, lay::FONT_LABEL, -1, lay::TONE_TEXT, 0.000f},
+	{"smooth", 40.252f, 94.100f, 11.000f, lay::FONT_LABEL, -1, lay::TONE_TEXT, 0.000f},
 	{"c", 71.640f, 77.500f, 11.000f, lay::FONT_LABEL, 0, lay::TONE_TEXT_DARK, 0.000f},
 	{"random", 56.924f, 107.000f, 11.000f, lay::FONT_LABEL, 0, lay::TONE_TEXT, 0.000f},
 	{"mutate", 71.230f, 107.000f, 11.000f, lay::FONT_LABEL, 0, lay::TONE_TEXT, 0.000f},
@@ -49,9 +49,9 @@ static const lay::Box BAR_BOX = {-2.000f, 6.500f, 4.000f, 13.100f};
 static const lay::Box DIE_BOX = {39.600f, 0.900f, 5.400f, 4.400f};
 static const lay::Box SHIFT_LEFT_BOX = {47.400f, 0.900f, 6.400f, 4.400f};
 static const lay::Box SHIFT_RIGHT_BOX = {55.000f, 0.900f, 6.400f, 4.400f};
-static const lay::Box MIN_BOX = {11.487f, 20.800f, 8.000f, 4.600f};
-static const lay::Box MAX_BOX = {29.087f, 20.800f, 8.000f, 4.600f};
-static const lay::Box SMOOTH_BOX = {51.400f, 20.800f, 10.000f, 4.600f};
+static const lay::Box MIN_BOX = {11.487f, 20.800f, 9.400f, 4.600f};
+static const lay::Box MAX_BOX = {29.387f, 20.800f, 9.400f, 4.600f};
+static const lay::Box SMOOTH_BOX = {52.000f, 20.800f, 9.400f, 4.600f};
 const float OUT_X = 71.640f, OUT_DY = 14.300f;	// output jack: centre x, y below the lane top
 
 // Tools and In.

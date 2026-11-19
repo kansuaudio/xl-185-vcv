@@ -496,6 +496,13 @@ static void testLaneOut() {
 	CHECK_NEAR(LaneOut::target(25.f, 100.f, 0.f), 7.5, 1e-6);	// Min above Max turns over
 	CHECK_NEAR(LaneOut::target(0.f, 100.f, 0.f), 10.0, 1e-6);
 	CHECK_NEAR(LaneOut::target(100.f, 100.f, 0.f), 0.0, 1e-6);
+	// Min and Max run -100..100: lanes below zero and across it.
+	CHECK_NEAR(LaneOut::target(0.f, -100.f, 100.f), -10.0, 1e-6);
+	CHECK_NEAR(LaneOut::target(50.f, -100.f, 100.f), 0.0, 1e-6);
+	CHECK_NEAR(LaneOut::target(100.f, -100.f, 100.f), 10.0, 1e-6);
+	CHECK_NEAR(LaneOut::target(25.f, -50.f, 50.f), -2.5, 1e-6);
+	CHECK_NEAR(LaneOut::target(100.f, -100.f, -20.f), -2.0, 1e-6);
+	CHECK_NEAR(LaneOut::target(0.f, 100.f, -100.f), 10.0, 1e-6);	// turned over across zero
 	// The same formula as the engine's lane values.
 	{
 		Pattern p;

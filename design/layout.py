@@ -391,8 +391,8 @@ MBAR_W = 4.0
 MBAR_BOX = (-MBAR_W / 2, LBTN_Y + LBTN_H + CLEAR, MBAR_W, 13.1)	# x relative to the column centre
 MRANGE_Y = MBAR_BOX[1] + MBAR_BOX[3] + CLEAR
 MRANGE_H = 4.6
-# Min, Max, Smooth: label, then its screen, on one row; screens fit "100" and "2000".
-mrange = [('min', 'MIN', 'MIN_PARAMS', 8.0), ('max', 'MAX', 'MAX_PARAMS', 8.0), ('smooth', 'SMOOTH', 'SMOOTH_PARAMS', 10.0)]
+# Min, Max, Smooth: label, then its screen, on one row; screens fit "-100" and "2000".
+mrange = [('min', 'MIN', 'MIN_PARAMS', 9.4), ('max', 'MAX', 'MAX_PARAMS', 9.4), ('smooth', 'SMOOTH', 'SMOOTH_PARAMS', 9.4)]
 mused = sum(text_width(r[0], 'label', LABEL_PX) + CLEAR + r[3] for r in mrange)
 mgap = (MCOL1 - MCOL0 - mused) / 2.0
 MRANGE = {}
@@ -870,7 +870,7 @@ def fires(mode, step):
 # Expander example: the sequencer's Length and playing stage, Auto off to show the dim interval.
 MOD_EXAMPLE = {
 	'value': [[20, 45, 80, 60, 35, 100, 10, 70], [100, 75, 50, 25, 0, 50, 90, 40], [0, 0, 60, 60, 15, 30, 85, 55]],
-	'MIN': [0, 20, 100], 'MAX': [100, 80, 0], 'SMOOTH': [0, 250, 40], 'every': 2, 'auto': 0,
+	'MIN': [0, -100, 100], 'MAX': [100, 100, 0], 'SMOOTH': [0, 2000, 40], 'every': 2, 'auto': 0,
 }
 
 def render_preview(path, th, pn):

@@ -23,7 +23,7 @@ struct LaneOut {
 	}
 
 	// The lane formula of the engine (XL_SEMANTICS 4) in volts: 10 V x (Min + value x (Max - Min)),
-	// all three in percent. Min above Max turns the lane over.
+	// value 0..100 %, Min and Max -100..100 %, so -10..+10 V. Min above Max turns the lane over.
 	static float target(float value, float min, float max) {
 		return 10.f * (min + value / 100.f * (max - min)) / 100.f;
 	}

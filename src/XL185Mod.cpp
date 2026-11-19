@@ -100,8 +100,8 @@ struct XL185Mod : Module {
 			std::string s = std::string("Lane ") + LANE_NAMES[l];
 			for (int i = 0; i < 8; i++)
 				configParam(VALUE_PARAMS + l * 8 + i, 0.f, 100.f, 0.f, s + " stage " + std::to_string(i + 1), " %")->snapEnabled = true;
-			configParam(MIN_PARAMS + l, 0.f, 100.f, 0.f, s + " minimum", " %")->snapEnabled = true;
-			configParam(MAX_PARAMS + l, 0.f, 100.f, 100.f, s + " maximum", " %")->snapEnabled = true;
+			configParam(MIN_PARAMS + l, -100.f, 100.f, 0.f, s + " minimum", " %")->snapEnabled = true;
+			configParam(MAX_PARAMS + l, -100.f, 100.f, 100.f, s + " maximum", " %")->snapEnabled = true;
 			configParam(SMOOTH_PARAMS + l, 0.f, 2000.f, 0.f, s + " smooth (ramp time)", " ms")->snapEnabled = true;
 			configButton(DIE_PARAMS + l, s + " die (random values)");
 			configButton(SHIFT_LEFT_PARAMS + l, s + " shift values left");

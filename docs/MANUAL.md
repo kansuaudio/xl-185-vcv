@@ -123,6 +123,8 @@ Place it directly to the right of XL-185. It has three lanes, A, B and C, each w
 
 - At every stage start, rests, stages that are off and random picks included, each lane moves to that
   stage's value: output = 10 V x (Min + value x (Max - Min)). Min above Max turns the lane upside down.
+- **Min** and **Max**: -100 to 100 %, which is -10 to +10 V. Min -50 and Max 50 give a lane from -5 to
+  +5 V with 0 V at a half-height bar.
 - **Smooth**: 0 to 2000 ms, a straight ramp to the new value; 0 jumps.
 - The screens show bare numbers: Min and Max are in %, Smooth in ms.
 - **Random** (all three lanes) and each lane's **die**: new values on every unlocked stage.
