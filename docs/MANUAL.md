@@ -7,7 +7,8 @@ it rests, plays once, holds, or repeats on every 4th, 3rd, 2nd or single step. B
 have its own length, the loop rarely lines up with the bar: a five-step figure drifts against a
 four-to-the-floor kick until you tell it to restart. It quantizes to 26 scales (8 of them microtonal),
 has a gate jack per stage for drum work, and a set of random tools that keep locked stages as they
-are. The XL-185 MOD expander adds three modulation lanes that step with the stages.
+are. The XL-185 MOD expander adds three modulation lanes that step with the stages, and several
+expanders can sit in a row.
 
 ## Quick start
 
@@ -136,8 +137,13 @@ three lanes, A, B and C, each with a value per stage (0 to 100 %), Min, Max and 
 - RANDOM and MUTATE inputs: triggers, same as the buttons.
 
 The tools follow the sequencer's locks and Length and are independent of its tools. Each button press
-is one undo step; triggers at the jacks and Auto are not. The expander follows the sequencer's panel colours while attached. On its own it outputs
-0 V and dims its bars. It reads the sequencer one sample late, which is how Rack expanders work; in a chain every further MOD is one more sample late.
+is one undo step; triggers at the jacks and Auto are not. The expander follows the sequencer's panel
+colours while attached. On its own it outputs 0 V and dims its bars.
+
+In a row of MODs each one has its own values, ranges and tools, and all of them follow the same
+sequencer. Take one out of the middle and the MODs to its right go quiet until the row is closed again.
+A MOD reads the sequencer one sample late, which is how Rack expanders work; every further MOD in the
+row is one more sample late.
 
 ## Notes on clocks
 
@@ -151,6 +157,14 @@ is one undo step; triggers at the jacks and Auto are not. The expander follows t
   clock module as well.
 - With a clock slower than 2 seconds per step the module keeps its last known step time for gate
   lengths.
+
+## Versions
+
+- **2.0.2**: several XL-185 MOD expanders can sit in a row.
+- **2.0.1**: Min and Max of the MOD lanes run from -100 to 100 %, for lanes from -10 to +10 V.
+- **2.0.0**: first release.
+
+Patches saved with an earlier version load unchanged.
 
 ## Credits
 
