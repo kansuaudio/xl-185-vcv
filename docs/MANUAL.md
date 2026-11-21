@@ -118,8 +118,9 @@ Auto and triggers at the MUTATE and RANDOM jacks write no undo steps.
 
 ## XL-185 MOD
 
-Place it directly to the right of XL-185. It has three lanes, A, B and C, each with a value per stage
-(0 to 100 %), Min, Max and Smooth.
+Place it directly to the right of XL-185. More MODs can follow, each directly to the right of the one
+before, with no limit: every one adds three lanes of its own and follows the same sequencer. A MOD has
+three lanes, A, B and C, each with a value per stage (0 to 100 %), Min, Max and Smooth.
 
 - At every stage start, rests, stages that are off and random picks included, each lane moves to that
   stage's value: output = 10 V x (Min + value x (Max - Min)). Min above Max turns the lane upside down.
@@ -136,7 +137,7 @@ Place it directly to the right of XL-185. It has three lanes, A, B and C, each w
 
 The tools follow the sequencer's locks and Length and are independent of its tools. Each button press
 is one undo step; triggers at the jacks and Auto are not. The expander follows the sequencer's panel colours while attached. On its own it outputs
-0 V and dims its bars. It reads the sequencer one sample late, which is how Rack expanders work.
+0 V and dims its bars. It reads the sequencer one sample late, which is how Rack expanders work; in a chain every further MOD is one more sample late.
 
 ## Notes on clocks
 

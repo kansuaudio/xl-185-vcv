@@ -4,6 +4,8 @@
 // What XL-185 tells an XL-185 MOD directly on its right, once per sample. The MOD owns both buffers
 // (leftExpander.producerMessage / consumerMessage); XL-185 writes the producer and requests the flip,
 // so the MOD reads it one sample later.
+// A MOD passes each message it reads on to a MOD on its own right in the same way, so MODs chain;
+// every link adds one sample.
 
 static const uint32_t EXPANDER_MARKER = 0x58313835u;	// "X185": a sequencer wrote this message
 

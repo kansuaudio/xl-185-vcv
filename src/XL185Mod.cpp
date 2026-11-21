@@ -142,10 +142,11 @@ struct XL185Mod : Module {
 
 	void process(const ProcessArgs& args) override {
 		Module* left = leftExpander.module;
-		// Linked only on a message the sequencer wrote since the last sample: while alone the buffer
+		// Linked only on a message written since the last sample, by the sequencer or by a linked MOD on
+		// the left: while alone the buffer
 		// still holds the old sequencer's last message, which must not count on re-attach.
 		const ExpanderMessage* msg = NULL;
-		if (left && left->model == modelXL185) {
+		if (left && (left->model == modelXL185 || left->model == modelXL185Mod)) {
 			const ExpanderMessage* m = (const ExpanderMessage*) leftExpander.consumerMessage;
 			if (m->marker == EXPANDER_MARKER && m->frame != lastFrame)
 				msg = m;
@@ -153,6 +154,15 @@ struct XL185Mod : Module {
 		bool fresh = msg != NULL;
 		if (msg)
 			lastFrame = msg->frame;
+		// A chain: every fresh message goes on unchanged to a MOD on the right, which reads it one
+		// sample later. Alone, nothing is passed, so the MODs further right go quiet too.
+		if (msg) {
+			Module* r = rightExpander.module;
+			if (r && r->model == modelXL185Mod && r->leftExpander.producerMessage) {
+				*(ExpanderMessage*) r->leftExpander.producerMessage = *msg;
+				r->leftExpander.requestMessageFlip();
+			}
+		}
 		length = msg ? clamp(msg->length, 1, 8) : 8;
 		lockBits = msg ? msg->lockBits : 0;
 

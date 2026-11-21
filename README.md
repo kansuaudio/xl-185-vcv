@@ -6,7 +6,7 @@ Kansu Audio plugin for VCV Rack 2 with two modules:
   plays once, holds, or repeats on every 4th, 3rd, 2nd or single step. Scale quantizer, a gate output
   per stage, random tools with locks.
 - **XL-185 MOD**: an expander placed to the right of XL-185, with three modulation lanes that take a
-  value per stage.
+  value per stage. Several can sit in a row.
 
 The manual is in `docs/MANUAL.md`. Factory presets are in `presets/`, written by
 `tools/make_presets.py`.
